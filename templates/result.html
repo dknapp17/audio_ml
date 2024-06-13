@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instrument Classification Result</title>
+</head>
+<body>
+    <h1>Instrument Classification Result</h1>
+    <p><strong>Predicted Instrument:</strong> {{ instrument }}</p>
+    <p><strong>Confidence:</strong> {{ confidence }}%</p>
+    
+    <!-- Display the uploaded audio file -->
+    <p><strong>Uploaded Audio File:</strong></p>
+    <audio controls>
+        <source src="{{ url_for('static', filename=file_path) }}" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Display the image of the predicted instrument -->
+    <!-- <p><strong>Image of Predicted Instrument:</strong></p>
+    <img src="{{ url_for('static', filename=image_path) }}" alt="Predicted Instrument"> -->
+
+    <br><br>
+    <a href="{{ url_for('index') }}">Upload Another Audio File</a>
+</body>
+</html>

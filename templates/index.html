@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Instrument Classifier</title>
+  </head>
+  <body>
+    <h1>Upload an audio file to classify the instrument</h1>
+    <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept="audio/*" required>
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>
