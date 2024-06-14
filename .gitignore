@@ -1,4 +1,4 @@
 aml_venv/**
-fs_config.py
+/fs_config.py
 freesound/**
 uploads/**
