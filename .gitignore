@@ -2,3 +2,5 @@ aml_venv/**
 /fs_config.py
 freesound/**
 uploads/**
+__pycache__/**
+tests/__pycache__/**
