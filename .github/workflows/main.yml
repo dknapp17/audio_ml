@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
@@ -25,20 +25,7 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m unittest discover -s tests
-
-    - name: Install Chocolatey
-      run: |
-        Set-ExecutionPolicy Bypass -Scope Process -Force; `
-        [System.Net.ServicePointManager]::SecurityProtocol = `
-        [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
-        iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-    - name: Install Docker
-      run: choco install docker-desktop --confirm
-
-    - name: Start Docker
-      run: Start-Service docker
+        python -m pytest
 
     - name: Build Docker image
       run: docker build -t audio_ml .
