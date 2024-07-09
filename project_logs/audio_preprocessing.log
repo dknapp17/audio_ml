@@ -1,0 +1,4 @@
+time:2024-07-09 16:40:00,703,name:,__main__,levelname:WARNING,message:No wav files found in ./freesound\247146
+time:2024-07-09 16:40:02,514,name:,__main__,levelname:INFO,message:Records missing target variable: 1.
+          Removing  0.0% of records from our data
+time:2024-07-09 16:40:02,517,name:,__main__,levelname:INFO,message:successfully saved music dataframe
