@@ -3,3 +3,4 @@ fs_config.py
 freesound/**
 config/**
 *.pyc
+config/fs_config.py
