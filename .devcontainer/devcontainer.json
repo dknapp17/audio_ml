@@ -22,9 +22,9 @@
 	},
 
 	// add mounts
-	"mounts": [
-		"source=/Users/davidknapp/Desktop/DS/AudioML/freesound,target=/workspaces/audio_ml/freesound,type=bind,consistency=cached"
-	],
+	// "mounts": [
+	// 	"source=/Users/davidknapp/Desktop/DS/AudioML/freesound,target=/workspaces/audio_ml/freesound,type=bind,consistency=cached"
+	// ],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
