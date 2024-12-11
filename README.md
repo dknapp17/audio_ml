@@ -1,5 +1,5 @@
 # About this project
-I built a classifier using a convolutional neural network (CNN) to identify an instrument playing in an audio clip. I sourced over 7,000 labeled audio clips (6.7GB of data) using the freesound API from freesound.org. Using pytorch, I created a CNN that can identify audio clips as one of 12 instruments (cello, clarinet, double bass, flute, oboe, piccolo, alto sax, baritone, sax, soprano sax, tenor sax, trumpet, violin). The end result is a streamlit app that allows a user to upload an audio file, and be returned a prediction for the instrument. The app can be accessed here. While the app works on small audio files for a limited subset of instruments, this is a framework that can be extended to more instruments with more data. I consider this project step 1 in a larger project to do full music transcription of multiple instruments. As an amateur guitar player, I'm extremely interested in the intersection of music and math!
+I built a classifier using a convolutional neural network (CNN) to identify an instrument playing in an audio clip. I sourced over 7,000 labeled audio clips (6.7GB of data) using the freesound API from freesound.org. Using pytorch, I created a CNN that can identify audio clips as one of 12 instruments (cello, clarinet, double bass, flute, oboe, piccolo, alto sax, baritone, sax, soprano sax, tenor sax, trumpet, violin). The end result is a streamlit app that allows a user to upload an audio file, and be returned a prediction for the instrument. The app can be accessed [here][1]. While the app works on small audio files for a limited subset of instruments, this is a framework that can be extended to more instruments with more data. I consider this project step 1 in a larger project to do full music transcription of multiple instruments. As an amateur guitar player, I'm extremely interested in the intersection of music and math!
 
 # About the data
 The data is sourced from freesound.org, particularly from the user MTG. MTG refers to The Music Technology Group, affiliated with the Universitat Pompeu Fabra in Barcelona. This group provided the audio files for research into audio processing. I randomly assigned 80% of the data to put in the training set and 20% to be in the validation set.
@@ -84,4 +84,6 @@ You're ready to begin!
 # Building and training the model
 The audio_ml_nn.ipynb notebook demonstrates how to build a neural network for audio classification. In the future this will be extended to other applications
 
+
+[1]: <https://instrumentclassify.streamlit.app/analytics>
 
