@@ -85,5 +85,5 @@ You're ready to begin!
 The audio_ml_nn.ipynb notebook demonstrates how to build a neural network for audio classification. In the future this will be extended to other applications
 
 
-[1]: <https://instrumentclassify.streamlit.app/analytics>
+[1]: <https://instrumentclassify.streamlit.app/>
 
