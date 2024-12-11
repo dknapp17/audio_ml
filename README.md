@@ -13,7 +13,7 @@ The secret to classifying audio is to treat it as a computer vision problem. Aud
 Notice that the spectrogram is a plot of frequency over time, having a color that represents an amplitude. Given a lot of Mel Spectrograms, the CNN can learn the features that identify different instruments. For instance, violins tend to have different frequency/amplitude combinations than cellos.
 
 ## Design choices.
-I chose to use a CNN to get experience building a pytorch NN from scratch. Other options would have been to fine tune a pretrained neural network or use a transformer architecture and may be explored in the future. 
+I chose to use a CNN to get experience building a pytorch neural network from scratch. Other options would have been to fine tune a pretrained neural network or use a transformer architecture and may be explored in the future. 
 
 ## CNN Architecture 
 
