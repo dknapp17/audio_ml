@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Add /root/.local/bin to PATH
 ENV PATH="/root/.local/bin:${PATH}"
 
-# Install system dependencies, including Git
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-dev \
