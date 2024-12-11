@@ -1,3 +1,36 @@
+# About this project
+I built a classifier using a convolutional neural network (CNN) to identify an instrument playing in an audio clip. I sourced over 7,000 labeled audio clips (6.7GB of data) using the freesound API from freesound.org. Using pytorch, I created a CNN that can identify audio clips as one of 12 instruments (cello, clarinet, double bass, flute, oboe, piccolo, alto sax, baritone, sax, soprano sax, tenor sax, trumpet, violin). The end result is a streamlit app that allows a user to upload an audio file, and be returned a prediction for the instrument. The app can be accessed here. While the app works on small audio files for a limited subset of instruments, this is a framework that can be extended to more instruments with more data. I consider this project step 1 in a larger project to do full music transcription of multiple instruments. As an amateur guitar player, I'm extremely interested in the intersection of music and math!
+
+# About the data
+The data is sourced from freesound.org, particularly from the user MTG. MTG refers to The Music Technology Group, affiliated with the Universitat Pompeu Fabra in Barcelona. This group provided the audio files for research into audio processing. I randomly assigned 80% of the data to put in the training set and 20% to be in the validation set.
+
+# Approach
+The secret to classifying audio is to treat it as a computer vision problem. Audio can be represented as what's called a Mel Spectrogram. I'm not going to get into all the technical aspects here, but a Mel Spectrogram essentially takes an audio clip and applies transformations to represent it as a heatmap. Here's an example:
+
+[Example Mel Spectrogram]
+
+
+Notice that the spectrogram is a plot of frequency over time, having a color that represents an amplitude. Given a lot of Mel Spectrograms, the CNN can learn the features that identify different instruments. For instance, violins tend to have different frequency/amplitude combinations than cellos.
+
+## Design choices.
+I chose to use a CNN to get experience building a pytorch NN from scratch. Other options would have been to fine tune a pretrained neural network or use a transformer architecture and may be explored in the future. 
+
+## CNN Architecture 
+
+Here is what the CNN architecture looks like:
+
+And here is what is happening at each step 
+
+Convolution:
+Pooling:
+Linear:
+
+In image recognition, it is common to go from large 
+
+# Reproducibility
+This project is designed to be reproducible. That is, you can follow the instructions to download the data in the same way that I did and train a model from scratch. See the "Reproducibility"
+
+
 # Getting Started:
 
 ## Create a Freesound Account
@@ -47,8 +80,8 @@ pip install -r requirements.txt
 
 You're ready to begin!
 
-# Getting Data
-freesound_API.ipynb is a python notebook for downloading audio from freesound.org. It is set up to download short audio clips uploaded by the Music Technology Group of the Universitat Pompeu Fabra in Barcelona. These clips are typically simple sounds from single orchestral instruments and make for good demonstrations on audio signal processing. 
 
 # Building and training the model
 The audio_ml_nn.ipynb notebook demonstrates how to build a neural network for audio classification. In the future this will be extended to other applications
+
+
