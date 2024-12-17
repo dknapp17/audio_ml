@@ -7,7 +7,7 @@ The data is sourced from freesound.org, particularly from the user MTG. MTG refe
 # Approach
 The secret to classifying audio is to treat it as a computer vision problem. Audio can be represented as what's called a Mel Spectrogram. I'm not going to get into all the technical aspects here, but a Mel Spectrogram essentially takes an audio clip and applies transformations to represent it as a heatmap. Here's an example:
 
-[Example Mel Spectrogram]
+![alt text](https://github.com/dknapp17/audio_ml/blob/main/spectrogram.png?raw=true)
 
 
 Notice that the spectrogram is a plot of frequency over time, having a color that represents an amplitude. Given a lot of Mel Spectrograms, the CNN can learn the features that identify different instruments. For instance, violins tend to have different frequency/amplitude combinations than cellos.
