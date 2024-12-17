@@ -28,7 +28,7 @@ Linear:
 In image recognition, it is common to go from large 
 
 # Reproducibility
-This project is designed to be reproducible. That is, you can follow the instructions to download the data in the same way that I did and train a model from scratch. See the "Reproducibility"
+This project is designed to be reproducible. That is, you can follow the instructions to download the data in the same way that I did and train a model from scratch. See the "Getting Started" section to learn more.
 
 
 # Getting Started:
