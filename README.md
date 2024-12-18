@@ -17,15 +17,7 @@ I chose to use a CNN to get experience building a pytorch neural network from sc
 
 ## CNN Architecture 
 
-Here is what the CNN architecture looks like:
-
-And here is what is happening at each step 
-
-Convolution:
-Pooling:
-Linear:
-
-In image recognition, it is common to go from large 
+To learn more about the CNN archtitecture, click [here][2]
 
 # Reproducibility
 This project is designed to be reproducible. That is, you can follow the instructions to download the data in the same way that I did and train a model from scratch. See the "Getting Started" section to learn more.
@@ -86,4 +78,5 @@ The audio_ml_nn.ipynb notebook demonstrates how to build a neural network for au
 
 
 [1]: <https://instrumentclassify.streamlit.app/>
+[2]: <https://poloclub.github.io/cnn-explainer/#article-convolution>
 
